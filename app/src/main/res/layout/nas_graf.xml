@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="2pt"
+        android:text="Přehled časů závodníků..."
+        android:textAllCaps="true"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <com.jjoe64.graphview.GraphView
+        android:id="@+id/graph"
+        android:layout_width="match_parent"
+        android:layout_height="200dip" />
+
+    <TextView
+        android:id="@+id/zavodniciJmena"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
+    <Button
+        android:id="@+id/buttonNacistGraf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Načíst závod graf" />
+
+    <Button
+        android:id="@+id/buttonUlozitGraf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Uložit závod graf" />
+</LinearLayout>

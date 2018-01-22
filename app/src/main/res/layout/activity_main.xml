@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.toshiba.myapplication.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="368dp"
+            android:layout_height="484dp"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="13dp">
+
+            <TextView
+                android:id="@+id/nazevJmenoBezce"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Jméno běžce:" />
+
+            <EditText
+                android:id="@+id/jmenoBezce"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+            <Button
+                android:id="@+id/buttonStart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Start stopky"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="159dp" />
+
+            <TextView
+                android:id="@+id/stopky_display"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="zastaveno"
+                android:textAlignment="center"
+                android:textSize="36sp"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="109dp"
+                tools:textAlignment="center"
+                tools:textColor="@color/colorPrimaryDark" />
+
+            <Button
+                android:id="@+id/button2Stop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Stop" />
+
+            <Button
+                android:id="@+id/buttonUkazatGraf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ukazat graf" />
+
+            <Button
+                android:id="@+id/ukazSeznam"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="UKAZAT SEZNAM BĚŽCŮ" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/stopky_obrazek"
+                    android:textAlignment="inherit"
+                    app:srcCompat="@drawable/stopky_obrazek"
+                    tools:textAlignment="gravity" />
+            </FrameLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
